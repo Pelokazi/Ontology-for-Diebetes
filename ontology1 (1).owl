@@ -1,0 +1,769 @@
+Prefix: dc: <http://purl.org/dc/elements/1.1/>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+
+Ontology: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD>
+
+
+AnnotationProperty: rdfs:comment
+
+    
+Datatype: rdf:PlainLiteral
+
+    
+Datatype: rdfs:Literal
+
+    
+Datatype: xsd:decimal
+
+    
+Datatype: xsd:double
+
+    
+Datatype: xsd:integer
+
+    
+ObjectProperty: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasAmount>
+
+    
+ObjectProperty: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasIngridients>
+
+    
+DataProperty: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#ConsistsOf>
+
+    
+DataProperty: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasAcid>
+
+    SubPropertyOf: 
+        owl:topDataProperty
+    
+    
+DataProperty: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasAmountOf>
+
+    
+DataProperty: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasAmountOfCups>
+
+    
+DataProperty: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasFats>
+
+    
+DataProperty: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasNutritionalComponents>
+
+    
+DataProperty: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasPiecesOf>
+
+    
+DataProperty: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasRefinedCarbs>
+
+    
+DataProperty: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasRisks>
+
+    SubPropertyOf: 
+        owl:topDataProperty
+    
+    
+DataProperty: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasSugar>
+
+    
+DataProperty: owl:topDataProperty
+
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Added_Suger_Foods>
+
+    Annotations: 
+        rdfs:comment "foods to avoid when have type 1 diabetic 
+
+added sugars.
+refined grains, such as white bread, pasta, and rice.
+processed foods.
+sugary breakfast cereals.
+sweet treats, such as cakes, biscuits, pastries, and candies.
+soda, diet soda, and other sugary drinks.
+juice drinks.
+fried foods and food high in saturated and trans fats.
+
+
+
+added suger foods
+
+Candy.
+Cakes.
+Cookies.
+Pies and cobblers.
+Sweet rolls, pastries, and doughnuts.
+Dairy desserts, such as ice cream and yogurt.
+Sugar sweetened drinks, such as soft drinks, sports drinks, energy drinks, and juice drinks."
+    
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Food_item>
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Amasi>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Dairy>,
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasRefinedCarbs> some xsd:double,
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasSugar> some xsd:double
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Apple>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Fruit>
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Avocado>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Fattyy_Foods>
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Bacon>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Protein>
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Bacon_Egg_Meal>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Meals>
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasAmount> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Bacon>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasAmount> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Bread>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasAmount> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Egg>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasAmount> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Oil>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasAmount> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Tomato>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasIngridients> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Fats>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasIngridients> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Refined_Carbs>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasIngridients> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Sugar>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasFats> value 19)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasRefinedCarbs> value 78)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasSugar> value 39)
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Bad_Meals>
+
+    Annotations: 
+        rdfs:comment "French Fries and Chicken Nuggets
+
+Foods to eat for a type 1 diabetic diet include complex carbohydrates such as:
+
+brown rice,
+whole wheat,
+quinoa,
+oatmeal,
+fruits,
+vegetables,
+beans, and
+lentils.
+
+Foods to avoid for a type 1 diabetes diet include:
+
+sodas (both diet and regular),
+simple carbohydrates - processed/refined sugars (white bread, pastries, chips, cookies, pastas),"
+    
+    EquivalentTo: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Risks>
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasFats> some xsd:integer[>= 15])
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasRefinedCarbs> some xsd:integer[>= 75])
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasSugar> some xsd:integer[>= 36])
+    
+    DisjointWith: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Good_Meals>
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Banana>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Fruit>
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Banana_Pancake_snack>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Meals>
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasAmount> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Banana>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasAmount> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Egg>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasAmount> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Milk>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasAmount> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Oil>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasIngridients> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Fats>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasIngridients> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Refined_Carbs>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasIngridients> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Sugar>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasFats> value 8)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasRefinedCarbs> value 30)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasSugar> value 23)
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Beef>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Protein>
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Beetroot>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Vegetables>
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Biltong>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Protein>
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Biscuits>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Added_Suger_Foods>
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Bread>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Starch>
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasIngridients> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Fats>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasIngridients> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Refined_Carbs>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasIngridients> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Sugar>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasFats> value 15)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasRefinedCarbs> value 77)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasSugar> value 38)
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Butter>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Fattyy_Foods>
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Cake>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Added_Suger_Foods>
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Carrots>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Vegetables>,
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasIngridients> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Fats>,
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasIngridients> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Refined_Carbs>,
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasIngridients> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Sugar>,
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasFats> value 3,
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasRefinedCarbs> value 10,
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasSugar> value 5
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Cereal>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Starch>
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasIngridients> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Fats>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasIngridients> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Refined_Carbs>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasIngridients> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Sugar>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasFats> value 3)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasRefinedCarbs> value 21)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasSugar> value 10)
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Chicken>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Protein>
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Chicken_Soup_Snack>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Meals>
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasAmount> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Carrots>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasAmount> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Chicken>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasAmount> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Milk>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasAmount> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Oil>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasAmount> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Tomato>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasIngridients> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Fats>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasIngridients> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Refined_Carbs>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasIngridients> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Sugar>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasFats> value 39)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasRefinedCarbs> value 95)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasSugar> value 65)
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Dairy>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Food_item>
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Doughnuts>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Fattyy_Foods>,
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasIngridients> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Fats>,
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasIngridients> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Refined_Carbs>,
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasIngridients> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Sugar>,
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasFats> value 35,
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasRefinedCarbs> value 90,
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasSugar> value 65
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Egg>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Protein>
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Egg_Salad_Meal>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Meals>
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasAmount> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Egg>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasAmount> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Mayonnaise>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasAmount> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Onion>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasAmount> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Pepper>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasAmount> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Tofu>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasIngridients> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Fats>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasIngridients> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Refined_Carbs>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasIngridients> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Sugar>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasFats> some xsd:integer[>= 30])
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasRefinedCarbs> some xsd:integer[>= 90])
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasSugar> some xsd:integer[>= 60])
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasFats> value 30)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasRefinedCarbs> value 82)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasSugar> value 55)
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Fats>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Food_Ingredients>
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Fattyy_Foods>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Food_item>
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Food_Ingredients>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Risks>
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Food_item>
+
+    DisjointWith: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Meals>
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Fruit>
+
+    Annotations: 
+        rdfs:comment "Fruits
+Fruits are natural sources of sugar and should be counted as carbohydrates if you’re using a diet plan.
+
+You can choose fresh or frozen. It’s important to understand how many carbohydrates are in certain portions of fruit. This will help you manage your blood sugar and insulin levels.
+
+Examples of fruit portions that contain 15 grams of carbohydrates include:
+
+1/2 cup of canned fruit
+1/4 cup of dried fruit
+1 small fresh fruit
+3 ounces of grapes
+1 cup of melon or berries
+1/2 cup of fruit juice"
+    
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Food_item>,
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#ConsistsOf> some xsd:double,
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasAmountOf> some xsd:double,
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasRefinedCarbs> some xsd:double,
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasRisks> some xsd:double,
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasSugar> some xsd:double
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Good_Meals>
+
+    Annotations: 
+        rdfs:comment "Get enough fiber. It may help control your blood sugar.
+ You can get fiber from:
+
+ whole grains, 
+beans, and 
+fruits and vegetables. 
+
+Try to get 25-30 grams a day.
+
+They're low in carbs (also known as low glycemic index foods). And they're high in key nutrients like calcium, potassium, fiber, magnesium, and other vitamins.
+
+Beans
+Dark green leafy vegetables
+Citrus fruit
+Sweet potatoes
+Berries
+Tomatoes
+Fish high in omega-3 fatty acids (like salmon)
+Whole grains
+Nuts
+Fat-free yogurt and milk
+
+
+
+Choose healthful protein foods
+Including protein in every meal can help balance blood sugar. People should choose healthful protein foods and vary their choices. Examples of these foods include:
+
+lean meat and poultry
+fish
+eggs
+beans and lentils
+tofu
+nuts and seeds
+low fat dairy foods"
+    
+    EquivalentTo: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Risks>
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasFats> some xsd:integer[< 10])
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasRefinedCarbs> some xsd:integer[< 45])
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasSugar> some xsd:integer[< 24])
+    
+    DisjointWith: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Bad_Meals>
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Grapes>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Fruit>
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#HighRiskMeal>
+
+    EquivalentTo: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Bad_Meals>
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasFats> some xsd:integer[>= 30])
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasRefinedCarbs> some xsd:integer[>= 90])
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasSugar> some xsd:integer[>= 60])
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#High_Fats>
+
+    EquivalentTo: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Fats>
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasFats> some xsd:integer[>= 15])
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#High_Refined_Carbs>
+
+    EquivalentTo: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Refined_Carbs>
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasRefinedCarbs> some xsd:integer[>= 75])
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#High_Sugar>
+
+    EquivalentTo: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Sugar>
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasSugar> some xsd:integer[>= 36])
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#IceCream>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Added_Suger_Foods>
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Lemon>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Fruit>
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Lettus>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Vegetables>
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#LowRiskMeal>
+
+    EquivalentTo: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Bad_Meals>
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasFats> some xsd:integer[< 20])
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasRefinedCarbs> some xsd:integer[< 80])
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasSugar> some xsd:integer[< 40])
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Low_Fats>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Fats>,
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasFats> some xsd:integer[< 10]
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Low_Refined_Carbs>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Refined_Carbs>,
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasRefinedCarbs> some xsd:integer[< 45]
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Low_Sugar>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Sugar>,
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasSugar> some xsd:integer[< 24]
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Maize_meal>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Starch>
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Margarine>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Fattyy_Foods>
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Mayonnaise>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Fattyy_Foods>
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Meals>
+
+    DisjointWith: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Food_item>
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#MediumRiskMeal>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Bad_Meals>
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Medium_Fats>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Fats>,
+        (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasFats> some xsd:integer[>= 10])
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasFats> some xsd:integer[< 15])
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Medium_Sugar>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Sugar>,
+        (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasSugar> some xsd:integer[>= 24])
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasSugar> some xsd:integer[< 36])
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Meduim_Refined_Carbs>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Refined_Carbs>,
+        (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasRefinedCarbs> some xsd:integer[>= 45])
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasRefinedCarbs> some xsd:integer[< 75])
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Milk>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Dairy>
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Mushroom>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Vegetables>
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Oil>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Fattyy_Foods>
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Onion>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Vegetables>
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Orange>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Fruit>
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Pasta>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Starch>
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Pepper>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Vegetables>
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Potato>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Vegetables>
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Potato_Chips_Meal>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Meals>
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasAmount> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Oil>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasAmount> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Potato>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasIngridients> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Fats>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasIngridients> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Refined_Carbs>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasIngridients> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Sugar>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasFats> value 4)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasRefinedCarbs> value 25)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasSugar> value 15)
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Protein>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Food_item>
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Refined_Carbs>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Food_Ingredients>
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Rice>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Starch>
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Rice_Salad_Snack>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Meals>
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasAmount> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Margarine>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasAmount> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Mayonnaise>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasAmount> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Orange>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasAmount> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Rice>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasAmount> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Yoghurt>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasIngridients> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Fats>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasIngridients> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Refined_Carbs>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasIngridients> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Sugar>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasFats> some xsd:integer[>= 15])
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasRefinedCarbs> some xsd:integer[>= 75])
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasSugar> some xsd:integer[>= 36])
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasFats> value 19)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasRefinedCarbs> value 75)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasSugar> value 38)
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Risks>
+
+    EquivalentTo: 
+        owl:Thing
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasIngridients> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Fats>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasIngridients> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Refined_Carbs>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasIngridients> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Sugar>)
+    
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasFats> some xsd:double,
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasRefinedCarbs> some xsd:double,
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasSugar> some xsd:double
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Starch>
+
+    Annotations: 
+        rdfs:comment "Typically, starting with about 15 grams of carbs should be adequate. Then recheck your blood sugar, and have another 15 grams if your reading is still low.
+
+Examples of fast-acting carbohydrates that have 15 grams of carbs include:
+
+1/4 cup of fruit juice
+1 small fresh fruit (4 ounces)
+4 to 6 crackers
+2 tablespoons of raisins
+1 tablespoon of honey"
+    
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Food_item>
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Sugar>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Food_Ingredients>
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Sweets>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Added_Suger_Foods>
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Tofu>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Vegetables>
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Tomato>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Vegetables>
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Vegetables>
+
+    Annotations: 
+        rdfs:comment "Always choose fresh or frozen vegetables without added salt or sauces.
+
+Portions of starchy vegetables that have 15 grams of carbs include:
+
+3 ounces of a baked potato
+1/2 cup of corn
+1/2 cup of sweet potatoes or boiled potatoes
+1/2 cup of peas
+1/2 cup of winter squash"
+    
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Food_item>
+    
+    
+Class: <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Yoghurt>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Dairy>
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasIngridients> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Fats>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasIngridients> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Refined_Carbs>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasIngridients> some <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Sugar>)
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasFats> some xsd:integer[>= 15])
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasFats> some xsd:integer[< 20])
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasRefinedCarbs> some xsd:integer[>= 75])
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasRefinedCarbs> some xsd:integer[< 80])
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasSugar> some xsd:integer[>= 36])
+         and (<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#hasSugar> some xsd:integer[< 40])
+    
+    
+Class: owl:Thing
+
+    
+DisjointClasses: 
+    <http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Beetroot>,<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Carrots>,<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Lettus>,<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Mushroom>,<http://www.semanticweb.org/cshons26/ontologies/2019/CKD#Tomato>
+
